@@ -1,0 +1,23 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: upload
+  http:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+fdfs:
+  so-timeout: 1501
+  connect-timeout: 601
+  thumbImage:    #缩略读生产参数
+    width: 150
+    height: 150
+  tracker-list:
+    - 192.168.5.154:22122
+    - 192.168.5.155:22122
+  pool:
+    max-total: 153  #从池中借出的对象的最大数目
+    max-wait-millis: 102  #获取连接时的最大等待毫秒数100
+
+
